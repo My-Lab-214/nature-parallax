@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parallax (CSS) | Nature</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-buttons a {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 6px 12px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-buttons a:hover {
+  color: #777;
+}
+
+#forest, #ocean, #desert {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#forest {
+  background-image: url('https://images.pexels.com/photos/1322351/pexels-photo-1322351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+#ocean {
+  background-image: url('https://images.pexels.com/photos/2397651/pexels-photo-2397651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+#desert {
+  background-image: url('https://images.pexels.com/photos/106606/pexels-photo-106606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.inner-div {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  height: 100%;              
+}
+
+h1 {
+  font-size: 120px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 4px rgb(255, 255, 255);
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px 0 10px;
+}
+
+p {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #ffffff96;
+  text-align: justify;
+  line-height: 30px;
+  margin: 20px 50px 30px;
+}
+  </style>
+</head>
+<body>
+  <section>
+    <section id="forest">
+      <nav class="navbar">
+        <h2 class="creator">Lokash | Sriram</h2>
+        <div class="logo">NATURE</div>
+        <div class="nav-buttons">
+          <a href="#forest">Forest</a>
+          <a href="#ocean">Ocean</a>
+          <a href="#desert">Desert</a>
+        </div>
+      </nav>
+      <div class="inner-div">
+        <h1>FOREST</h1>
+      </section>
+
+    <div class="content">
+      <h2>Nature Green Home</h2>
+      <p>Forests are complex ecosystems dominated by trees and undergrowth that cover roughly 31% of Earth’s land area. These habitats support immense biodiversity, hosting millions of plant and animal species. Forests regulate climate by sequestering carbon dioxide, producing oxygen, and influencing rainfall patterns. They protect soil from erosion and provide resources such as timber, medicine, and food. Tropical rainforests, temperate woodlands, and boreal forests each have unique characteristics and species. Indigenous communities often depend on forests for practices and livelihoods. Despite their importance, forests face threats from deforestation, climate change, and unsustainable management, making conservation crucial for planetary health. Forests also protect the soil from washing away and provide homes for wildlife.</p>
+    </div>
+
+    <section id="ocean">
+      <div class="inner-div">
+        <h1>OCEAN</h1></div>
+    </section>
+
+    <div class="content">
+      <h2> Big Natue Water World</h2>
+      <p>Oceans cover over 70% of Earth's surface. They absorb carbon dioxide from the atmosphere, regulate climate, and produce more than half of the planet’s oxygen through phytoplankton photosynthesis. Marine habitats range from sunlit coral reefs and kelp forests to dark abyssal plains and hydrothermal vents. Oceans support diverse life, including fish, mammals, invertebrates, and microorganisms, many of which are vital for human food security and economies. Ocean currents distribute heat, influence weather patterns, and connect distant ecosystems. However, pollution, overfishing, acidification, and warming threaten marine biodiversity and ecological balance, highlighting the need for sustainable practices and marine conservation. They help control the weather and temperature by absorbing carbon dioxide and producing oxygen.</p>
+    </div>
+
+    <section id="desert">
+      <div class="inner-div">
+        <h1>DESERT</h1></div>
+    </section>
+
+    <div class="content">
+      <h2>Hot and Dry Nature</h2>
+      <p>Deserts are arid landscapes receiving less than 250 millimeters of rain annually. Extreme temperatures characterize deserts: scorching heat by day and cooling at night. Vegetation is sparse and adapted, with plants like cacti and shrubs conserving water through deep roots or reduced leaves. Animal species—such as reptiles, mammals, and insects—evolved nocturnal or burrowing behaviors to avoid heat. Despite harsh conditions, deserts host biodiversity and geological features like sand dunes and salt flats. Human cultures have also adapted to desert life, developing water‑harvesting techniques and livelihoods. Human impacts and climate change threaten fragile deserts, underscoring the need for sustainable management. Plants and animals there have special ways to survive the hot days and cold nights.</p>
+    </div>
+  </section>
+</body>
+</html>
